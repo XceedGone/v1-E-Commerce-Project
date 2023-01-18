@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title>
+      <img id="headLogo" src="/assets/plainlogo.png">
+    </ion-title>
+    <ion-buttons slot="start"  >
+      <ion-menu-button color="light" menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end" routerLink="/../profile">
+      <ion-button>
+        <ion-icon color="warning" name="person" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="title">Cart</p>
+
+  <!-- CART ITEMS -->
+  <ion-list class="list" lines="none">
+    <ion-item-sliding *ngFor="let item of cartItems$|async">
+      <ion-item>
+        <app-cart-item [item]="item" (increase)="onIncrease(item)" (decrease)="onDecrease(item)"></app-cart-item>
+      </ion-item>
+      <ion-item-options side='end'>
+        <ion-item-option (click)="removeFromCart(item)">
+          <ion-icon name='trash-outline' size='large' color='danger'></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <!-- EMPTY CART -->
+  <div class="empty-cart" *ngIf="!(cartItems$|async).length">
+    <ion-icon name="d-cart"></ion-icon>
+    <p id="emptyCart">Your cart is empty</p>
+  </div>
+
+  <!-- CHECKOUT BUTTON -->
+  <div *ngIf="(cartItems$|async).length">
+    <ion-grid>
+
+      <ion-row>
+        <ion-col>
+          <div class="mainTxt">Order Total:</div>
+        </ion-col>
+        <ion-col>
+          <div class="subTxt">₱ {{totalAmount$|async|number:'1.2'}}</div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <div class="mainTxt">Shipping Fee:</div>
+        </ion-col>
+        <ion-col>
+          <div class="subTxt">₱ 100.00</div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <div class="mainTxt">Total:</div>
+        </ion-col>
+        <ion-col>
+          <div class="subTxt">₱ {{fullAmount$|async|number:'1.2'}}</div>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </div>
+
+  <app-button id="checkoutBtn" *ngIf="(cartItems$|async).length" routerLink="/checkout">
+    Checkout
+  </app-button>
+
+</ion-content>

@@ -1,0 +1,154 @@
+ion-content{
+  --background: #4B006E;
+
+  .header {
+
+    ion-button {
+      height: 60px;
+      width: 60px;
+      --color: #ecb837;
+
+      ion-icon {
+        font-size: 2rem;
+        --color: #4B006E;
+      }
+    }
+  }
+
+  ion-accordion-group{
+
+    margin-top: -30px;
+
+  ion-item{
+    --background: #ecb837;
+  }
+
+  .itemHead{
+    --background: #4B006E;
+  }
+  
+  p{
+    font-size: 13pt;
+    font-family: 'Poppins', sans-serif;
+    color: #4B006E;
+    
+  }
+  
+
+}
+  
+
+
+  .infoMain{
+    font-weight: 700;
+    font-size: 20pt;
+    color: #ecb837;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .image {
+    position: fixed;
+    top: 0px;
+    border-radius: 100%
+  }
+
+  .card {
+    height: 100%;
+    width: 100%;
+    background: #4B006E;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    border-radius: 2rem 2rem 0 0;
+    top: 350px;
+    .card-title {
+      padding: 2rem;
+      font-family: 'Poppins', sans-serif;
+      margin-left: -10px;
+  
+      
+      h1 {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 25pt;
+        color: #ecb837;
+      }
+
+      p {
+        font-size: 20pt;
+        font-weight: 700;
+        color: white;
+
+        sup {
+          font-size: 15pt;
+          margin-right: -0.5rem;
+        }
+      }
+
+      .brand{
+        font-size: 15pt;
+        font-weight: 700;
+        color: white;
+      }
+    }
+
+    .rates {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    .about {
+      margin-top: -30px;
+      margin-bottom: 2.5rem;
+      margin-left: 30px;
+      margin-right: 30px;
+      text-align: justify;
+      font-family: 'Poppins', sans-serif;
+
+      h1 {
+        font-weight: 600;
+        color: #ecb837;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: white;
+      }
+    }
+  }
+}
+
+ion-footer{
+
+#btnCart{
+  position: fixed;
+  bottom: -5px;
+  left: -2px;
+  width: 100%;
+  --background: #ecb837;
+  --color: #4B006E;
+  font-family: 'Poppins', sans-serif;
+}
+
+}
+
+ion-button{
+  width: 50px;
+  height: 50px;
+}
+
+ion-icon{
+  --width: 1000px;
+  --height: 1000px;
+}
+
+
+.qtyNum{
+  margin-top: 5px;
+  font-size: 4;
+  color: white;
+
+}
+

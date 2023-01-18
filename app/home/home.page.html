@@ -1,0 +1,142 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title>
+      <img id="headLogo" src="/assets/plainlogo.png">
+    </ion-title>
+    <ion-buttons slot="start"  >
+      <ion-menu-button color="light" menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end" routerLink="/../profile">
+      <ion-button>
+        <ion-icon color="warning" name="person" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+   
+</ion-header>
+
+
+<ion-content>
+
+  <swiper class="swipe" [config]="swiperConfig"> 
+    <ng-template swiperSlide *ngFor="let img of images">
+      <div class="swipeContainer"><img [src]="img"> </div>
+    </ng-template>
+  </swiper>
+
+  <div class="title ion-padding">
+    <h2>Categories</h2>
+    
+  </div>
+
+  <div class="category-slider ion-padding-start">
+    <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
+      <ion-slide routerLink="/home-page/listing" >
+        <ion-col>
+          <h4>Chocolate Bars</h4>
+          <img src="../../assets/images/foods/chocobars.jpg" />
+        </ion-col>
+      </ion-slide>
+      <ion-slide routerLink="/tab-page2/listing2" >
+        <ion-col>
+          <h4>Chocolate Blocks</h4>
+          <img src="../../assets/images/foods/block.jpg" />
+          
+        </ion-col>
+      </ion-slide>
+      <ion-slide routerLink="/tab-page3/listing3">
+        <ion-col>
+          <h4>Chocolate Boxes</h4>
+          <img src="../../assets/images/foods/chocoboxx.jpg" />
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+
+  <div class="title ion-padding">
+    <h2>Premium Products</h2>
+    
+  </div>
+
+  <div class="product-slider ion-padding-start">
+    <ion-slides  [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
+      <ion-slide routerLink="/detail3/3">
+        <ion-col class="ion-text-left"   routerDirection="forward">
+          <img src="../../assets/images/foods/ferrero.jpg" />
+          <p>₱150</p>
+          <h6>Ferrero</h6>
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide routerLink="/detail2/8">
+        <ion-col class="ion-text-left"   routerDirection="forward">
+          <img src="../../assets/images/foods/kitkatgold.jpg" />
+          <p>₱115</p>
+          <h6>KitKat Gold</h6>
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide routerLink="/detail2/2">
+        <ion-col class="ion-text-left"   routerDirection="forward">
+          <img src="../../assets/images/foods/belgiandark.jpg" />
+          <p>₱800</p>
+          <h6>Belgian Dark</h6>
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide routerLink="/detail3/9">
+        <ion-col class="ion-text-left"   routerDirection="forward">
+          <img src="../../assets/images/foods/royal.jpg" />
+          <p>₱195</p>
+          <h6>Royal Thins</h6>
+        </ion-col>
+      </ion-slide> 
+    </ion-slides>
+  </div>
+
+  <div class="title ion-padding">
+    <h2>People's Choice</h2>
+    
+  </div>
+
+  <div class="product-slider ion-padding-start">
+    <ion-slides  [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
+      <ion-slide routerLink="/detail2/6">
+        <ion-col class="ion-text-left"   routerDirection="forward">
+          <img src="../../assets/images/foods/kitkat.jpg" />
+          <p>₱160</p>
+          <h6>KitKat</h6>
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide routerLink="/detail/10">
+        <ion-col class="ion-text-left"   routerDirection="forward">
+          <img src="../../assets/images/foods/twix.jpg" />
+          <p>₱120</p>
+          <h6>Twix</h6>
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide routerLink="/detail3/4">
+        <ion-col class="ion-text-left"   routerDirection="forward">
+          <img src="../../assets/images/foods/kisses.jpg" />
+          <p>₱550</p>
+          <h6>Kisses Milk</h6>
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide routerLink="/detail3/5">
+        <ion-col class="ion-text-left"   routerDirection="forward">
+          <img src="../../assets/images/foods/maltesers.jpg" />
+          <p>₱250</p>
+          <h6>Maltesers</h6>
+        </ion-col>
+      </ion-slide> 
+    </ion-slides>
+  </div>
+</ion-content>
+
+ 

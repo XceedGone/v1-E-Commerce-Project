@@ -1,0 +1,142 @@
+ion-toolbar{
+    --background: #4B006E;
+}
+
+ion-content{
+    --background: #4B006E;
+}
+
+ion-radio{
+    position:fixed;
+    right: 330px;
+    --color: #4B006E;
+}
+
+ion-textarea{
+    height: 10px;
+    border-radius: 10px;
+    border: 3px solid #4B006E;
+    font-family: 'Poppins', sans-serif;
+    --color: #4B006E;
+}
+
+ion-item{
+    --background: #ecb837;
+}
+
+ion-icon{
+    color: white;
+}
+
+ion-card{
+    margin-left: 5px;
+    width: 365px;
+    --background: #ecb837;
+}
+
+
+.label{
+    color: #4B006E;
+    position: fixed;
+    left: 40px;
+    font-size: 13pt;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modalExit{
+    position:fixed;
+    right: 0px;
+    color: #4B006E;
+    width: 40px;
+    height: 40px;
+}
+
+.bling{
+    position: fixed;
+    top: -14px;
+}
+
+.blingdown{
+    position:fixed;
+    bottom:-14px;
+}
+
+.subTxt{
+    font-family: 'Fredoka One', cursive;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15pt;
+    color: #ecb837;
+}
+
+.creditImg{
+    width: 80px;
+    height: 30px;
+    position: fixed;
+    left: 270px;
+}
+
+.txtBar{
+    margin-left: -30px;
+}
+
+.choose{
+    width: 325px;
+    margin-left: -10px;
+    border-radius: 10px;
+    border: 3px solid #4B006E;
+    --color: black;
+}
+
+.infoLabel{
+    color: #4B006E;
+    font-size: 10pt;
+    font-family: 'Poppins', sans-serif;
+}
+
+#chkoutTxt{
+    font-family: 'Fredoka One', cursive;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 25pt;
+    color: #ecb837;
+}
+
+#btnCart{
+    position: fixed;
+    bottom: -5px;
+    left: -2px;
+    width: 100%;
+    --background: #ecb837;
+    --color: #4B006E;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.bling{
+    position: fixed;
+    top: -14px;
+}
+
+.blingdown{
+    position:fixed;
+    bottom:-14px;
+}
+
+#checkIcon{
+    width: 200px;
+    height: 200px;
+    margin-top: 150px;
+    color: #ecb837;
+}
+
+#thanksMsg, #getBackMsg{
+    color: #ecb837;
+    font-family: 'Poppins', sans-serif;
+}
+
+#homeBtn{
+    --background: #ecb837;
+    --color: #4B006E;
+    font-family: 'Poppins', sans-serif;
+}
+

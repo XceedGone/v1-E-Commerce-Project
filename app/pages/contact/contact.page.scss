@@ -1,0 +1,225 @@
+ion-toolbar{
+    --background: #54230D;
+}
+
+ion-content{
+    --background: #4B006E;
+}
+
+ion-button{
+    --color: #4B006E;
+}
+
+ion-label{
+    --color: yellow;
+}
+
+ion-textarea{
+    --color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#chocoDrip{
+    width: 100%;
+}
+
+#logo{
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+#contactTxt{
+    font-family: 'Fredoka One', cursive;
+    margin-top: -270px;
+    margin-left: 20px;
+    font-size: 30pt;
+    color: #ecb837;
+}
+
+#contactSubTxt{
+    font-family: 'Fredoka One', cursive;
+    padding: 20px;
+    font-size: 15pt;
+    color: #ecb837;
+}
+
+#msgIcon, #callIcon, #locateIcon, #socmedIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.boxItems{
+    color: #4B006E;
+    font-weight: bold;
+}
+
+#callBox, #socmedBox{
+    margin-left: 15px;
+}
+
+#locateBox, #socmedBox{
+    margin-top: 10px;
+}
+#headLogo{
+  margin-top: 15px;
+  width: 150px;
+  height: 150px;
+}
+
+//general modal properties
+.modalBox{
+    width: 100px;
+    height: 100px;
+}
+
+#modalMsgTxt, #callTxt, #locateTxt, #socmedTxt{
+    font-family: 'Fredoka One', cursive;
+    margin-left: 0px;
+    font-size: 25pt;
+    color: #ecb837;
+}
+
+.modalTbar{
+    --background: #4B006E;
+}
+
+.modalExit{
+    position:fixed;
+    right: 0px;
+    color: #4B006E;
+    width: 40px;
+    height: 40px;
+}
+
+.bling{
+    position: fixed;
+    top: -14px;
+}
+
+.blingdown{
+    position:fixed;
+    bottom:-14px;
+}
+
+//Message Modal 
+
+#inMsgIcon{
+    width: 100px;
+    height: 100px;
+    color: #ecb837;
+}
+
+#msgItems{
+    margin-top: 100px;
+}
+
+#btnSendMsg{
+    margin: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.txtBar{
+    margin-right: 10px;
+    --background: #4B006E;
+}
+
+.txtLabel{
+    font-family: 'Fredoka One', cursive;
+    color: #ecb837;
+}
+
+//Call Modal
+
+#callTxt{
+    margin-left: 10px;
+}
+
+#callItems{
+    margin-top: 150px;
+}
+
+.callTxtSub{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20pt;
+    color: #ecb837;
+}
+
+.callTxtNum{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    color: white;
+    font-weight: bold;
+}
+
+#phoneIcon{
+    width: 50px;
+    height: 50px;
+    color: #ecb837;
+    margin-top: -30px;
+}
+
+//locate modal
+
+#locateItems{
+    margin-top: 90px;
+}
+
+#locationTxt{
+    font-family: 'Fredoka One', cursive;
+    font-size: 15pt;
+    color: #ecb837;
+}
+
+#address{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    color: white;
+    font-weight: bold;
+}
+
+#endTxt{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20pt;
+    color: #ecb837;
+}
+
+//socmed modal
+
+#snsItems{
+    margin-top: 100px;
+}
+
+#followTxt{
+    font-family: 'Fredoka One', cursive;
+    font-size: 15pt;
+    color: #ecb837;
+}
+.snsIcon{
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+#socmedIcons{
+    margin-top: 20px;
+    position: fixed;
+    left: 40px;
+}
+
+#socmedInfo{
+    position: fixed;
+    right: 40px;
+    top: 330px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14pt;
+    color: white;
+}
+#globeIcon{
+    width: 70px;
+    height: 70px;
+    color: #ecb837;
+    margin-top: -30px;
+}
+
+

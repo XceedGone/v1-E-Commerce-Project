@@ -1,0 +1,15 @@
+<div class="card" (click)="clicked.emit()">
+  <ion-img [src]="item.image"></ion-img>
+
+  <div class="card-content">
+    <h3 class="title">{{item.title}}</h3>
+    <h2 class="subtitle"><sup>₱</sup>{{item.price|number:'1.2'}}</h2>
+
+    <ion-buttons slot="start">
+ 
+      <ion-button>
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </div>
+</div>

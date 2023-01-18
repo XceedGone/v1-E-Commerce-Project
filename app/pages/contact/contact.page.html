@@ -1,0 +1,178 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img id="headLogo" src="/assets/plainlogo.png">
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button color="light" menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="/assets/bg.png" id="chocoDrip">
+  <center>
+    <p id="contactTxt">Contact Us</p>
+    <p id="contactSubTxt">Have any questions? Click one of the boxes to reach us!</p>
+  </center>
+
+  <div id="buttons">
+    <!--message modal-->
+    <center>
+      <ion-button class="modalBox" id="msgBox" color="warning">
+        <div class="boxItems">
+          <ion-icon id="msgIcon" name="mail-outline"></ion-icon><br>
+          <ion-label>Message</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-modal trigger="msgBox">
+        <ng-template>
+          <ion-content id="msgModalItems">
+            <img class="bling" src="/assets/s.png">
+            <ion-icon button class="modalExit" name="close-outline" (click)="closeModal()"></ion-icon>
+            <center>
+              <div id="msgItems">
+                <ion-icon id="inMsgIcon" name="mail-outline"></ion-icon>
+                <p id="modalMsgTxt">Send a Message!</p>
+                <ion-item class="txtBar">
+                  <ion-label class="txtLabel" position="floating">Name</ion-label>
+                  <ion-textarea [(ngModel)]="inputVal"></ion-textarea>
+                </ion-item>
+                <ion-item class="txtBar">
+                  <ion-label class="txtLabel" position="floating">Email</ion-label>
+                  <ion-textarea></ion-textarea>
+                </ion-item>
+                <ion-item class="txtBar">
+                  <ion-label class="txtLabel" position="floating">Message</ion-label>
+                  <ion-textarea autoGrow="true"></ion-textarea>
+                </ion-item>
+                <ion-button id="btnSendMsg" color="warning" (click)="showAlert()">Send Message</ion-button>
+              </div>
+            </center>
+          </ion-content>
+          <img class="blingdown" src="/assets/s.png">
+        </ng-template>
+      </ion-modal>
+
+      <!--call modal-->
+      <ion-button class="modalBox" id="callBox" color="warning">
+        <div class="boxItems">
+          <ion-icon id="callIcon" name="call-outline"></ion-icon><br>
+          <ion-label>Call Us!</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-modal trigger="callBox">
+        <ng-template>
+          <ion-content id="callModalItems">
+            <img class="bling" src="/assets/s.png">
+            <ion-icon button class="modalExit" name="close-outline" (click)="closeModal()"></ion-icon>
+            <center>
+              <div id="callItems">
+                <ion-icon id="phoneIcon" name="call-outline"></ion-icon>
+                <p id="callTxt">Call the Choco-Hotline!</p>
+                <p class="callTxtSub">Globe</p>
+                <p class="callTxtNum">09563728571</p>
+                <p class="callTxtSub">Smart</p>
+                <p class="callTxtNum">09094728391</p>
+                <p class="callTxtSub">Telephone No.</p>
+                <p class="callTxtNum">(8)6348593</p>
+              </div>
+            </center>
+          </ion-content>
+          <img class="blingdown" src="/assets/s.png">
+        </ng-template>
+      </ion-modal>
+      <br>
+
+      <!--locate modal-->
+      <ion-button class="modalBox" id="locateBox" color="warning">
+        <div class="boxItems">
+          <ion-icon id="locateIcon" name="location-outline"></ion-icon><br>
+          <ion-label>Locate Us!</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-modal trigger="locateBox">
+        <ng-template>
+          <ion-content id="locateModalItems">
+            <img class="bling" src="/assets/s.png">
+            <ion-icon button class="modalExit" name="close-outline" (click)="closeModal()"></ion-icon>
+            <center>
+              <div id="locateItems">
+                <p id="locateTxt">Visit the <br> Choco-Land!</p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.5310646030084!2d121.05952775093627!3d14.625768980329065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b796aecb8763%3A0xaa026ea7350f82e7!2sTechnological%20Institute%20of%20the%20Philippines%20-%20Quezon%20City!5e0!3m2!1sen!2sph!4v1641499150208!5m2!1sen!2sph"
+                  width="90%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p id="locationTxt">Location:</p>
+                <p id="address">938 Aurora Blvd, Cubao, Quezon City, 1109 Metro Manila</p>
+                <p id="endTxt">See You There!</p>
+              </div>
+            </center>
+          </ion-content>
+          <img class="blingdown" src="/assets/s.png">
+        </ng-template>
+      </ion-modal>
+
+      <!--socmed modal-->
+      <ion-button class="modalBox" id="socmedBox" color="warning">
+        <div class="boxItems">
+          <ion-icon id="socmedIcon" name="earth-outline"></ion-icon><br>
+          <ion-label>Socials</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-modal trigger="socmedBox">
+        <ng-template>
+          <ion-content id="socmedModalItems">
+            <img class="bling" src="/assets/s.png">
+            <ion-icon button class="modalExit" name="close-outline" (click)="closeModal()"></ion-icon>
+            <center>
+              <div id="snsItems">
+                <ion-icon id="globeIcon" name="globe-outline"></ion-icon>
+                <p id="socmedTxt">Let's Meet Online!</p>
+                <p id="followTxt">Follow us on our <br> social media accounts:</p>
+                <div id="socmedIcons">
+                  <ion-row>
+                    <ion-col>
+                      <ion-icon class="snsIcon" name="logo-facebook"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                  <ion-col><ion-icon class="snsIcon" id="insta" name="logo-instagram"></ion-icon><br></ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col><ion-icon class="snsIcon" id="twitter" name="logo-twitter"></ion-icon></ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col><ion-icon class="snsIcon" id="tiktok" name="logo-tiktok"></ion-icon></ion-col>
+                </ion-row>
+                </div>
+                
+                <div id="socmedInfo">
+                  <ion-row>
+                      <p>The Chocoholics Shop</p>
+                  </ion-row>
+                  <ion-row>
+                    <p>chocoholics.shop</p>
+                </ion-row>
+                <ion-row>
+                  <p>thechocoholics</p>
+                </ion-row>
+                <ion-row>
+                  <p>thechocoholics</p>
+                </ion-row>
+                </div>
+
+              </div>
+            </center>
+          </ion-content>
+          <img class="blingdown" src="/assets/s.png">
+        </ng-template>
+      </ion-modal>
+    </center>
+  </div>
+
+  <center><img id="logo" src="/assets/logo.png"></center>
+</ion-content>

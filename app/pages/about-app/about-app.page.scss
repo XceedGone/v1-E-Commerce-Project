@@ -1,0 +1,57 @@
+ion-content{
+    --background: #4B006E;
+}
+
+ion-title{
+    color: white;
+}
+
+ion-toolbar{
+    --background: #54230D;
+}
+
+ion-card{
+    --background: #ecb837; 
+    --color: #4B006E;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+#phoneIcon{
+    width: 200px;
+    height: 200px;
+    color: #dbdbd9;
+}
+
+#brandLogo{
+    position: absolute;
+    left: 150px;
+    top: 250px;
+    width: 80px;
+    height: 80px;
+}
+
+#chocoDrip{
+    width: 100%;
+}
+
+#applogo{
+    margin-top: 15px;
+    border-radius: 500px;
+    width: 200px;
+    height: 200px;
+}
+
+#titleTxt{
+    padding-right: 20px;
+    font-family: 'Fredoka One', cursive;
+    margin-top: -270px;
+    margin-left: 20px;
+    font-size: 30pt;
+    color: #ecb837;
+}
+#headLogo{
+  margin-top: 15px;
+  width: 150px;
+  height: 150px;
+}

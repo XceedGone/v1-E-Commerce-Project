@@ -1,0 +1,72 @@
+ion-content {
+  --padding-start: 2rem;
+  --padding-end: 2rem;
+  --background: #4B006E;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    margin-top: 350px;
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      font-weight: 600;
+      color: #272626;
+      margin: 0;
+    }
+
+
+      ion-img {
+        width: 90%;
+        height: 90%;
+      }
+    }
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .list-header {
+    font-family: 'Fredoka One', cursive;
+    font-weight: 700;
+    color: #ecb837;
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+    margin-top: 110px;
+    letter-spacing: 2px;
+  }
+
+  .food-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+   
+ion-toolbar{
+  --background: #55230d;
+    opacity: 1;
+    color: white;
+ // --background: url(../../assets/gold.jpg) no-repeat center/cover fixed;
+   
+}
+
+
+#pBtn{
+  width: 50px;
+  height: 50px;
+  color: #ecb837;
+  margin-top: 5px;
+  margin-left: 130px;
+}
+#headLogo{
+  margin-top: 15px;
+  width: 150px;
+  height: 150px;
+}

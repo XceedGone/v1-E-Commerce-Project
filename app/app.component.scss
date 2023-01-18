@@ -1,0 +1,57 @@
+
+#userIcon{
+    border-radius: 50%;
+    border: 10px solid #4B006E;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    top: 70px;
+}
+
+#user-info-content{
+    position: absolute;
+    left: 100px;
+    top: 95px;
+
+    p{
+        font-size: 15pt;
+        margin-left: 5px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+
+    #num{
+        font-size: 10pt;
+    }
+}
+
+.menu-header-bg{
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(180deg, #2c0141 60%, #4B006E 60%);
+}
+
+.menu-items{
+    margin: 0px;
+
+    ion-icon{
+        margin-right: 20px;
+        color: #4B006E;
+    }
+
+    ion-item{
+        padding-left: 20px;
+        margin-bottom: 10px;
+        font-family: 'Poppins', sans-serif;
+        --background: #ecb837;
+        color: #4B006E;
+    }
+}
+
+ion-list{
+    background: #ecb837;
+}
+
+ion-content{
+    --background: #ecb837;
+}

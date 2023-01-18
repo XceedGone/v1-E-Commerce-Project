@@ -1,0 +1,65 @@
+.card {
+  width: 100%;
+  padding: 1rem;
+  background: #ecb837;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 15%;
+  margin-left: -1px;
+  margin-bottom: 1.5rem;
+
+  ion-img::part(image){
+    width: 115px;
+    height: 115px;
+    border-radius: 5%;
+  }
+
+  .card-content {
+    text-align: center;
+
+    .title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.2rem;
+      color: #1d1d1d;
+    }
+
+    .subtitle {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: white;
+      margin-top: 0;
+
+      sup {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        margin-right: 2px;
+        color: white;
+      }
+    }
+
+    ion-buttons {
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      ion-button {
+        --background: #6b45bc;
+        font-weight: 700;
+        color: #fff;
+        width: 50px;
+        height: 40px;
+        --padding-start: 0;
+        --padding-end: 0;
+        --padding-top: 0;
+        --padding-bottom: 0;
+      }
+    }
+  }
+}
+

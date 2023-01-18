@@ -1,0 +1,91 @@
+<ion-content>
+  <div class="header">
+    
+
+  <div class="image">
+    <ion-img [src]="food.image"></ion-img>
+  </div>
+  
+  <ion-buttons>
+    <ion-button routerLink="/tab-page2/listing2">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  </div>
+  
+  <!-- FOOD DETAIL CARD -->
+
+  <div class="card">
+    <div class="card-content">
+      <div class="card-title">
+        <p class="brand" class="ion-no-margin">{{food.brand}}</p>
+        <h1 class="ion-no-margin">{{food.title}}</h1>
+        <p class="ion-no-margin">₱ {{food.price | number: '1.2'}}</p>
+        <p class="brand">Quantity: </p>
+        <center>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-button color="warning" (click)="delVal()"><ion-icon name="remove-outline"></ion-icon></ion-button>
+            </ion-col>
+            <ion-col >
+              <p class="qtyNum">{{qtyNum}}</p>
+            </ion-col>
+            <ion-col>
+              <ion-button color="warning" (click)="addVal()"><ion-icon name="add-outline"></ion-icon></ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        </center>
+      </div>
+    </div>
+
+    
+
+      <ion-accordion-group>
+        <ion-accordion value="colors">
+          <ion-item  class="itemHead" slot="header">
+            <ion-label class="infoMain">About</ion-label>
+          </ion-item>
+          <ion-list slot="content">
+
+            <ion-item>
+              <p>{{food.description}}</p>
+            </ion-item>
+          </ion-list>
+        </ion-accordion>
+
+        <ion-accordion value="shapes">
+          <ion-item class="itemHead" slot="header">
+            <ion-label class="infoMain">Ingredients</ion-label>
+          </ion-item>
+          <ion-list slot="content">
+
+            <ion-item>
+              <p>{{food.ingredients}}</p>
+            </ion-item>
+          </ion-list>
+        </ion-accordion>
+
+        <ion-accordion value="numbers">
+          <ion-item class="itemHead" slot="header">
+            <ion-label class="infoMain">Diet and Allergy</ion-label>
+          </ion-item>
+          <ion-list slot="content">
+
+            <ion-item>
+              <p>{{food.diet}}</p>
+            </ion-item>
+          </ion-list>
+        </ion-accordion>
+      </ion-accordion-group>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="full" id="btnCart" (click)="addItemToCart()">Add to Cart</ion-button>
+  </ion-toolbar>
+</ion-footer>
+
+

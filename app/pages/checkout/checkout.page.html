@@ -1,0 +1,115 @@
+<ion-content>
+  <img class="bling" src="/assets/s.png"> 
+  <ion-icon button class="modalExit" name="close-outline" routerLink="/home-page/cart"></ion-icon>
+    <div id="msgItems">
+    <p id="chkoutTxt">Checkout</p>
+    </div>
+    
+  <p class="subTxt">Contact Information</p>
+  <ion-card>
+    <ion-card-content>
+      <ion-item lines="none" class="txtBar">
+        <ion-label class="infoLabel" position="stacked">Name: </ion-label>
+        <ion-textarea rows=1> </ion-textarea>
+      </ion-item>
+      
+      <ion-item lines="none" class="txtBar">
+        <ion-label class="infoLabel" position="stacked">Phone Number:</ion-label>
+        <ion-textarea rows=1></ion-textarea>
+      </ion-item>
+      
+      <ion-item lines="none" class="txtBar">
+        <ion-label class="infoLabel" position="stacked">Email Address:</ion-label>
+        <ion-textarea rows=1></ion-textarea>
+      </ion-item>
+      
+      <ion-item lines="none" class="txtBar">
+        <ion-label class="infoLabel" position="stacked">Delivery Instructions:</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <p class="subTxt">Delivery Address</p>
+  <ion-card>
+    <ion-card-content>  
+
+      <ion-item lines="none" class="txtBar">
+        <ion-label class="infoLabel" position="stacked">Street Address:</ion-label>
+        <ion-textarea rows=1></ion-textarea>
+      </ion-item>
+      
+      <ion-item lines="none" class="txtBar">
+        <ion-label class="infoLabel" position="stacked">Province:</ion-label>
+        <ion-textarea rows=1></ion-textarea>
+      </ion-item>
+      
+      <ion-item lines="none" class="txtBar">
+        <ion-label class="infoLabel" position="stacked">City:</ion-label>
+        <ion-textarea rows=1></ion-textarea>
+      </ion-item>
+      
+      <ion-item lines="none" class="txtBar">
+        <ion-label class="infoLabel" position="stacked">Barangay:</ion-label>
+        <ion-textarea rows=1></ion-textarea>
+      </ion-item>
+  </ion-card-content>
+  </ion-card>
+
+    <p class="subTxt">Payment Method</p>
+    <ion-card>
+      <ion-card-content>
+    <ion-radio-group id="items">
+    <ion-item id="allItem">
+        <ion-label class="label">Credit Card Online</ion-label>
+        <img class="creditImg" src="/assets/ccs.png">
+        <ion-radio mode="md"></ion-radio>
+    </ion-item>
+    <ion-item>
+        <ion-label class="label">Credit Card Terminal</ion-label>
+        <img class="creditImg" src="/assets/ccs.png">
+        <ion-radio mode="md"></ion-radio>
+    </ion-item>
+    <ion-item>
+        <ion-label class="label">GCash</ion-label>
+        <img class="creditImg" src="/assets/gcash.JPG">
+        <ion-radio mode="md"></ion-radio>
+    </ion-item>
+    <ion-item>
+        <ion-label class="label">Paymaya</ion-label>
+        <img class="creditImg" src="/assets/paymaya.png">
+        <ion-radio mode="md"></ion-radio>
+    </ion-item>
+    <ion-item>
+        <ion-label class="label">Cash</ion-label>
+        <ion-icon class="creditImg" name="wallet-outline"></ion-icon>
+        <ion-radio mode="md"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-card-content>
+</ion-card>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="full" id="btnCart">Complete Order</ion-button>
+  </ion-toolbar>
+</ion-footer>
+
+<ion-modal trigger="btnCart">
+  <ng-template>
+    <ion-content id="locateModalItems">
+      <img class="bling" src="/assets/s.png">
+      <center>
+      <ion-icon id="checkIcon" name="checkmark-circle-outline"></ion-icon>
+      <p id="thanksMsg">Thank you for purchasing!</p>
+      <p id="getBackMsg">We will get back to you if we have any questions or updates regarding your order.</p>
+      <ion-button id="homeBtn" color="warning" routerLink="/home" (click)="closeModal()">Go Home</ion-button>
+    </center>
+    </ion-content>
+    <img class="blingdown" src="/assets/s.png">
+  </ng-template>
+</ion-modal>
+

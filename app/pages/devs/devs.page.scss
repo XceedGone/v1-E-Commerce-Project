@@ -1,0 +1,106 @@
+ion-toolbar{
+    --background: #54230D;
+}
+
+ion-content{
+    --background: #4B006E;
+}
+
+ion-card{
+    --background:#4B006E;
+    --color: #ecb837;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+ion-card-title{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    --color: #ecb837;
+}
+
+ion-slides {
+    height: 100%;
+  }
+
+  .swiper-slide {
+    display: block;
+  }
+
+  .swiper-slide h2 {
+    margin-top: 2.8rem;
+  }
+
+  .swiper-slide img {
+    display: block;
+    max-height: 50%;
+    pointer-events: none;
+  }
+
+  b {
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ion-color-step-600, #60646b);
+  }
+
+  p b {
+    color: var(--ion-text-color, #000000);
+  }
+
+  .chocoDrip{
+    width: 100%;
+}
+
+.chocoDripDown{
+    transform: rotate(180deg);
+    width: 100%;
+    position: fixed;
+    bottom: -14px;
+}
+
+.mainTxt{  
+    font-family: 'Fredoka One', cursive;
+    margin-top: -20px;
+    margin-left: 0px;
+    font-size: 30pt;
+    color: #ecb837;
+}
+
+.subTxt{
+    font-family: 'Fredoka One', cursive;
+    padding: 15px;
+    font-size: 15pt;
+    color: #ecb837;
+}
+
+.devPic{
+    margin-top: -250px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#introTxt{
+    margin-top: -250px;
+}
+
+#manIcon{
+    width: 100px;
+    height: 100px;
+    color: #ecb837;
+}
+
+#arrowIcon{
+    width: 50px;
+    height: 50px;
+    color: #ecb837;
+}
+#headLogo{
+  margin-top: 15px;
+  width: 150px;
+  height: 150px;
+}

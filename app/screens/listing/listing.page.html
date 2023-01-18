@@ -1,0 +1,33 @@
+<ion-header >
+  <ion-toolbar >
+    <ion-title>
+      <img id="headLogo" src="/assets/plainlogo.png">
+    </ion-title>
+    <ion-buttons slot="start"  >
+      <ion-menu-button color="light" menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end" routerLink="/../profile">
+      <ion-button>
+        <ion-icon color="warning" name="person" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <img style="width: 100%; position: absolute; z-index: -1;"  src="/assets/bg.png">   
+</ion-header>
+
+<ion-content> 
+  
+  <!-- PRODUCTS -->
+  <center><h1 class="list-header">Chocolate Bars</h1> </center>
+  <div class="food-list">
+    <app-food-card *ngFor="let food of foods" [item]="food" (clicked)="goToDetailPage(food.id)"></app-food-card>
+    
+  </div>
+  
+<!-- BUTTONS -->
+<div class="nBtn">
+  <ion-icon id="icon" name="arrow-forward-circle-outline" routerLink="/tab-page2/listing2"></ion-icon>
+</div>
+  
+</ion-content>

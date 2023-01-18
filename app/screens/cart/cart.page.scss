@@ -1,0 +1,115 @@
+ion-toolbar{
+  --background: #4B006E;
+    opacity: 1;
+}
+ 
+ion-content {
+  --padding-top: 1.6rem;
+  --padding-end: 1.6rem;
+  --background: #4B006E;
+
+  .list{
+    background: #4B006E;
+  }
+   
+  .title {
+    font-family: 'Fredoka One', cursive;
+    font-weight: 700;
+    font-size: 25pt;
+    color: #ecb837;
+    margin-top: 5px;
+    margin-bottom: 2rem;
+    padding-left: 1.6rem;
+  }
+
+  .mainTxt{
+    font-family: 'Fredoka One', cursive;
+    font-size: 15pt;
+    color: #ecb837;
+    margin-left: 20px;
+  }
+
+  .subTxt{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    color: white;
+    margin-left: 70px;
+  }
+
+  #checkoutBtn{
+    margin-top: 10px;
+  }
+
+  #emptyCart{
+    font-family: 'Poppins', sans-serif;
+    margin-top: -200px;
+    margin-left: 10px;
+  }
+ 
+  app-cart-item {
+    display: block;
+    width: 100%;
+    padding-left: 1.6rem;
+  }
+
+  ion-item-sliding {
+    margin-bottom: 2rem;
+    overflow: hidden;
+
+    ion-item {
+      --padding-start: 0;
+      --inner-padding-end: 0;
+      border-radius: 25px;
+      --background: #4B006E;
+    }
+
+    ion-item-options {
+      border: 2px solid #f3f3f3;
+      border-radius: 25px;
+      overflow: hidden;
+      background: #ecb837;
+
+      ion-item-option {
+        background: #ecb837;
+      }
+    }
+  }
+
+  .empty-cart {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #c7c7c7;
+
+    ion-icon {
+      font-size: 8rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+  app-button {
+    display: block;
+    padding-left: 1.6rem;
+
+    span {
+      margin-left: 10px;
+      font-size: 1.5rem;
+
+      sup {
+        font-weight: 400;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+ 
+#headLogo{
+  margin-top: 15px;
+  width: 150px;
+  height: 150px;
+}

@@ -1,0 +1,235 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img id="headLogo" src="/assets/plainlogo.png">
+    </ion-title>
+
+    <ion-buttons slot="start">
+      <ion-menu-button color="light" menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <img style="width: 100%; position: absolute; z-index: -1;" src="/assets/bg.png">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="spacer"></div>
+
+  <div class="container-content">
+    <img src="../../assets/icon-johnny.jpg">
+
+
+  </div>
+
+  <div class="content_div">
+
+    <br>
+    <br>
+    <div id="lists">
+      <center>
+        <h1>Johnny Cruz</h1>
+      </center>
+      <center>
+        <p id="num">09564837295</p>
+      </center>
+
+
+      <div class="list_div" id="l1">
+        <ion-label>Contact Information</ion-label>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+
+      <div class="list_div" id="l4">
+        <ion-label>Delivery Details</ion-label>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+
+      <div class="list_div" id="l2">
+        <ion-label>Order History</ion-label>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+    </div>
+
+  </div>
+  <!--modal 1-->
+  <ion-modal trigger="l1">
+    <ng-template>
+      <ion-content id="socmedModalItems">
+
+        <img class="bling" src="/assets/s.png">
+        <ion-icon button class="modalExit" name="close-outline" (click)="closeModal()"></ion-icon>
+        <p class="subTxt">Contact</p>
+        <ion-card>
+          <ion-card-content>
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Name: </ion-label>
+              <ion-textarea rows=1>Johnny Cruz</ion-textarea>
+            </ion-item>
+
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Phone Number:</ion-label>
+              <ion-textarea rows=1>09564837295</ion-textarea>
+            </ion-item>
+
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Email Address:</ion-label>
+              <ion-textarea rows=1>jcruz@gmail.com</ion-textarea>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-content>
+      <img class="blingdown" src="/assets/s.png">
+    </ng-template>
+  </ion-modal>
+
+  <!--modal 3-->
+  <ion-modal trigger="l4">
+    <ng-template>
+      <ion-content id="socmedModalItems">
+
+        <img class="bling" src="/assets/s.png">
+        <ion-icon button class="modalExit" name="close-outline" (click)="closeModal()"></ion-icon>
+        <p class="subTxt">Delivery Details</p>
+        <ion-card>
+          <ion-card-content>
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Street Address: </ion-label>
+              <ion-textarea rows=1>#43 Arrozcaldo Street</ion-textarea>
+            </ion-item>
+
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Province:</ion-label>
+              <ion-textarea rows=1>Rizal</ion-textarea>
+            </ion-item>
+
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">City:</ion-label>
+              <ion-textarea rows=1>San Mateo</ion-textarea>
+            </ion-item>
+
+            <ion-item lines="none" class="txtBar">
+              <ion-label class="infoLabel" position="stacked">Barangay:</ion-label>
+              <ion-textarea rows=1>Ampid 1</ion-textarea>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-content>
+      <img class="blingdown" src="/assets/s.png">
+    </ng-template>
+  </ion-modal>
+
+  <!--modal 4-->
+  <ion-modal trigger="l2">
+    <ng-template>
+      <ion-content id="socmedModalItems">
+
+        <img class="bling" src="/assets/s.png">
+        <ion-icon button class="modalExit" name="close-outline" (click)="closeModal()"></ion-icon>
+        <p class="subTxt">Order History</p>
+        <ion-card>
+          <ion-card-content>
+
+            <ion-accordion-group>
+              <ion-accordion value="colors">
+                <ion-item slot="header">
+                  <ion-label id="order">Order: vZh3b</ion-label>
+                </ion-item>
+            
+                <ion-list slot="content">
+                  <ion-item>
+                    <ion-row>
+                    <ion-col>
+                      <ion-label class="orders">Order Date:</ion-label>
+                    </ion-col>
+                    <ion-col>
+                      <ion-label class="orderPrice">Jul-21-2022</ion-label>
+                    </ion-col>
+                  </ion-row>
+                  </ion-item>
+                  <ion-item>
+                    <ion-row>
+                    <ion-col>
+                      <ion-label class="orders">Status:</ion-label>
+                    </ion-col>
+                    <ion-col>
+                      <ion-label class="orderPrice">Delivered</ion-label>
+                    </ion-col>
+                  </ion-row>
+                  </ion-item>
+                  <ion-item>
+                    <ion-row>
+                    <ion-col>
+                      <ion-label class="orders">2x KitKat Gold</ion-label>
+                    </ion-col>
+                    <ion-col>
+                      <ion-label class="orderPrice">₱230</ion-label>
+                    </ion-col>
+                  </ion-row>
+                  </ion-item>
+                  <ion-item>
+                    <ion-row>
+                    <ion-col>
+                      <ion-label class="orders">2x Maltesers</ion-label>
+                    </ion-col>
+                    <ion-col>
+                      <ion-label class="orderPrice">₱500</ion-label>
+                    </ion-col>
+                  </ion-row>
+                  </ion-item>
+                  <ion-item>
+                    <ion-row>
+                    <ion-col>
+                      <ion-label class="orders">10x Snickers</ion-label>
+                    </ion-col>
+                    <ion-col>
+                      <ion-label class="orderPrice">₱400</ion-label>
+                    </ion-col>
+                  </ion-row>
+                  </ion-item>
+                  <ion-item>
+                    <ion-row>
+                    <ion-col>
+                      <ion-label class="fee">Subtotal:</ion-label>
+                    </ion-col>
+                    <ion-col>
+                      <ion-label class="orderPrice">₱1130</ion-label>
+                    </ion-col>
+                  </ion-row>
+                  </ion-item>
+                  <ion-item>
+                    <ion-row>
+                    <ion-col>
+                      <ion-label class="fee">Delivery Fee:</ion-label>
+                    </ion-col>
+                    <ion-col>
+                      <ion-label class="orderPrice">₱100</ion-label>
+                    </ion-col>
+                  </ion-row>
+                  </ion-item>
+                  <ion-item>
+                    <ion-row>
+                    <ion-col>
+                      <ion-label class="fee">Total:</ion-label>
+                    </ion-col>
+                    <ion-col>
+                      <ion-label class="orderPrice">₱1230</ion-label>
+                    </ion-col>
+                  </ion-row>
+                  </ion-item>
+                </ion-list>
+              </ion-accordion>
+
+            </ion-accordion-group>
+
+          </ion-card-content>
+        </ion-card>
+
+      </ion-content>
+      <img class="blingdown" src="/assets/s.png">
+    </ng-template>
+  </ion-modal>
+
+
+</ion-content>
